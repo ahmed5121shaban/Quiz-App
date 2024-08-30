@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { QuestionsComponent } from '../questions/questions.component';
 import { ResultsComponent } from '../results/results.component';
+import { HomeComponent } from '../home/home.component';
+import { NotFoundComponent } from '../not-found/not-found.component';
+import { AngularQuestionsComponent } from '../angular-questions/angular-questions.component';
 
 const routes: Routes = [
-  {path:"",component:QuestionsComponent},
+  {path:"",component:HomeComponent},
+  {path:"angular",component:AngularQuestionsComponent},
   {path:"results",component:ResultsComponent},
+  {path:"**",component:NotFoundComponent}
 ];
 
 @NgModule({
