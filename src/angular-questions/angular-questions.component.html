@@ -1,31 +1,44 @@
 <div class="container-fluid">
-  <div class="container pt-5">
+  <div class="container pt-4">
+    <div class="timer float-end bg-dark-subtle rounded-2">
+      <h4 class="p-1 text-danger-emphasis">{{result}}</h4>
+    </div>
     <div class="d-flex flex-column align-items-center">
       <img src="images/angular-icon-svgrepo-com.svg" width="150px" alt="angular">
       <p>Angular</p>
     </div>
 
-    <div class=" bg-dark-subtle w-75 m-auto mt-4">
-      <div class="bg-light p-3">
-        <h4>Question Title</h4>
-      </div>
 
-      <div class="bg-light-subtle p-3 d-flex align-items-center">
-        <input type="radio" name="angular" id="angular">
-        <p class="ps-3 pt-3">Question Answer</p>
-      </div>
+      <form class="w-75 m-auto mt-4">
+        <div class=" bg-dark-subtle">
+          <div class="bg-light p-3">
+            <h4>{{questionsNo}} - {{questions[questionsNo-1].question}}</h4>
+          </div>
+        </div>
 
-      <div class="bg-light-subtle p-3 d-flex align-items-center">
-        <input type="radio" name="angular" id="angular">
-        <p class="ps-3 pt-3">Question Answer</p>
-      </div>
+        @for (item of questions[questionsNo-1].options; track $index) {
+          <div class="bg-light-subtle ps-5">
+            <label class="answer-input d-flex align-items-center" >
+              <input #answerValue value="{{item}}" type="radio" name="angular" class="radio-choice" (click)="choice(answerValue)">
+              <p class="ps-3 pt-3">{{item}}</p>
+            </label>
+          </div>
+        }
 
-      <div class="bg-light-subtle p-3 d-flex align-items-center">
-        <input type="radio" name="angular" id="angular">
-        <p class="ps-3 pt-3">Question Answer</p>
-      </div>
 
-    </div>
+        <div class="d-flex align-items-center justify-content-between pt-4">
+          <div>
+            <p class="fw-bold opacity-75">{{questionsNo}} of 30 Questions</p>
+          </div>
+          <div>
+            <div class="btn btn-dark me-3" (click)="nextQ()">Next</div>
+            <div class="btn btn-dark" (click)="backToQ()">Back</div>
+        </div>
+        </div>
+
+      </form>
+
+
 
   </div>
 </div>
