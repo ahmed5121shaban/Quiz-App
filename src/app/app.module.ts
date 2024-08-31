@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { ResultsComponent } from '../results/results.component';
 import { HomeComponent } from '../home/home.component';
 import { NotFoundComponent } from '../not-found/not-found.component';
-import { provideHttpClient } from '@angular/common/http';
+import { provideHttpClient, withFetch } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AngularQuestionsComponent } from '../angular-questions/angular-questions.component';
 
@@ -26,7 +26,9 @@ import { AngularQuestionsComponent } from '../angular-questions/angular-question
   ],
   providers: [
     provideClientHydration(),
-    provideHttpClient(),
+    provideHttpClient(
+      withFetch()
+    )
 
   ],
   bootstrap: [AppComponent]
