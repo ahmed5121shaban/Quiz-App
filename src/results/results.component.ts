@@ -13,7 +13,8 @@ export class ResultsComponent implements OnInit {
 
   constructor(private server:QuestionsService) {
     this.server.fResult().subscribe((res:any)=>this.result = res);
-    this.server.allQuestions().subscribe((res:any)=>{this.length = res.quiz.questions.length})
+    this.server.allAngularQuestions().subscribe((res:any)=>{this.length = res.quizAngular.questions.length})
+    this.server.allCsQuestions().subscribe((res:any)=>{this.length = res.quizCSharp.questions.length})
    }
 
   ngOnInit() {}

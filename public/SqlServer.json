@@ -1,0 +1,447 @@
+{
+  "quizSQLServer": {
+    "title": "SQL Server Interview Questions",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is SQL Server?",
+        "options": [
+          "A programming language",
+          "A database management system",
+          "A front-end web framework",
+          "An operating system"
+        ],
+        "answer": "A database management system"
+      },
+      {
+        "id": 2,
+        "question": "What is the primary function of SQL Server?",
+        "options": [
+          "To design web pages",
+          "To manage and store data",
+          "To compile code",
+          "To create graphic designs"
+        ],
+        "answer": "To manage and store data"
+      },
+      {
+        "id": 3,
+        "question": "Which of the following is a relational database in SQL Server?",
+        "options": [
+          "MongoDB",
+          "PostgreSQL",
+          "MySQL",
+          "Microsoft SQL Server"
+        ],
+        "answer": "Microsoft SQL Server"
+      },
+      {
+        "id": 4,
+        "question": "What does SQL stand for?",
+        "options": [
+          "Structured Query Language",
+          "Simple Query Language",
+          "Sequential Query Language",
+          "Standard Query Language"
+        ],
+        "answer": "Structured Query Language"
+      },
+      {
+        "id": 5,
+        "question": "Which command is used to retrieve data from a database in SQL Server?",
+        "options": [
+          "INSERT",
+          "UPDATE",
+          "SELECT",
+          "DELETE"
+        ],
+        "answer": "SELECT"
+      },
+      {
+        "id": 6,
+        "question": "What is a primary key in SQL Server?",
+        "options": [
+          "A unique identifier for a table record",
+          "A foreign key in another table",
+          "A key used to encrypt data",
+          "A default value for a column"
+        ],
+        "answer": "A unique identifier for a table record"
+      },
+      {
+        "id": 7,
+        "question": "What is a foreign key in SQL Server?",
+        "options": [
+          "A key that uniquely identifies each record in a table",
+          "A key used to encrypt data",
+          "A key that creates a relationship between two tables",
+          "A key that sets default values for columns"
+        ],
+        "answer": "A key that creates a relationship between two tables"
+      },
+      {
+        "id": 8,
+        "question": "Which SQL Server statement is used to add a new row to a table?",
+        "options": [
+          "INSERT INTO",
+          "UPDATE",
+          "SELECT",
+          "DELETE"
+        ],
+        "answer": "INSERT INTO"
+      },
+      {
+        "id": 9,
+        "question": "What is normalization in SQL Server?",
+        "options": [
+          "The process of organizing data to reduce redundancy",
+          "The process of increasing data redundancy",
+          "The process of backing up data",
+          "The process of encrypting data"
+        ],
+        "answer": "The process of organizing data to reduce redundancy"
+      },
+      {
+        "id": 10,
+        "question": "What is the purpose of an index in SQL Server?",
+        "options": [
+          "To sort the data in a table",
+          "To speed up data retrieval",
+          "To ensure data integrity",
+          "To create relationships between tables"
+        ],
+        "answer": "To speed up data retrieval"
+      },
+      {
+        "id": 11,
+        "question": "Which SQL Server clause is used to filter records?",
+        "options": [
+          "ORDER BY",
+          "GROUP BY",
+          "WHERE",
+          "HAVING"
+        ],
+        "answer": "WHERE"
+      },
+      {
+        "id": 12,
+        "question": "What is a view in SQL Server?",
+        "options": [
+          "A virtual table based on the result-set of an SQL statement",
+          "A physical table in the database",
+          "A tool for designing databases",
+          "A type of index"
+        ],
+        "answer": "A virtual table based on the result-set of an SQL statement"
+      },
+      {
+        "id": 13,
+        "question": "Which SQL Server statement is used to modify existing data in a table?",
+        "options": [
+          "INSERT",
+          "UPDATE",
+          "SELECT",
+          "DELETE"
+        ],
+        "answer": "UPDATE"
+      },
+      {
+        "id": 14,
+        "question": "What is a stored procedure in SQL Server?",
+        "options": [
+          "A precompiled collection of SQL statements",
+          "A type of index",
+          "A backup method",
+          "A user interface tool"
+        ],
+        "answer": "A precompiled collection of SQL statements"
+      },
+      {
+        "id": 15,
+        "question": "What is the difference between DELETE and TRUNCATE commands?",
+        "options": [
+          "DELETE removes rows one at a time, TRUNCATE removes all rows at once",
+          "TRUNCATE can be rolled back, DELETE cannot",
+          "DELETE resets identity columns, TRUNCATE does not",
+          "There is no difference"
+        ],
+        "answer": "DELETE removes rows one at a time, TRUNCATE removes all rows at once"
+      },
+      {
+        "id": 16,
+        "question": "What is the purpose of the GROUP BY clause in SQL Server?",
+        "options": [
+          "To filter records",
+          "To sort records",
+          "To aggregate data across rows",
+          "To join tables"
+        ],
+        "answer": "To aggregate data across rows"
+      },
+      {
+        "id": 17,
+        "question": "What is a transaction in SQL Server?",
+        "options": [
+          "A single SQL statement",
+          "A sequence of one or more SQL statements executed as a single unit",
+          "A backup of the database",
+          "A type of user"
+        ],
+        "answer": "A sequence of one or more SQL statements executed as a single unit"
+      },
+      {
+        "id": 18,
+        "question": "What are the ACID properties in SQL Server transactions?",
+        "options": [
+          "Automatic, Consistent, Integrated, Durable",
+          "Atomicity, Consistency, Isolation, Durability",
+          "Atomicity, Connection, Isolation, Durability",
+          "Automatic, Consistent, Isolation, Durable"
+        ],
+        "answer": "Atomicity, Consistency, Isolation, Durability"
+      },
+      {
+        "id": 19,
+        "question": "Which SQL Server statement is used to create a new table?",
+        "options": [
+          "CREATE DATABASE",
+          "CREATE TABLE",
+          "ALTER TABLE",
+          "INSERT INTO"
+        ],
+        "answer": "CREATE TABLE"
+      },
+      {
+        "id": 20,
+        "question": "What is a trigger in SQL Server?",
+        "options": [
+          "A scheduled task",
+          "A type of index",
+          "A stored procedure that automatically executes in response to certain events on a table or view",
+          "A backup method"
+        ],
+        "answer": "A stored procedure that automatically executes in response to certain events on a table or view"
+      },
+      {
+        "id": 21,
+        "question": "What is the difference between a clustered and a non-clustered index?",
+        "options": [
+          "A clustered index defines the physical order of data, while a non-clustered index does not",
+          "A non-clustered index defines the physical order of data, while a clustered index does not",
+          "Clustered indexes are faster than non-clustered indexes",
+          "There is no difference"
+        ],
+        "answer": "A clustered index defines the physical order of data, while a non-clustered index does not"
+      },
+      {
+        "id": 22,
+        "question": "What is the purpose of the HAVING clause in SQL Server?",
+        "options": [
+          "To filter records before grouping",
+          "To filter records after grouping",
+          "To sort records",
+          "To join tables"
+        ],
+        "answer": "To filter records after grouping"
+      },
+      {
+        "id": 23,
+        "question": "What is a cursor in SQL Server?",
+        "options": [
+          "A tool for designing databases",
+          "A control structure that allows traversal over the records in a database",
+          "A type of index",
+          "A backup method"
+        ],
+        "answer": "A control structure that allows traversal over the records in a database"
+      },
+      {
+        "id": 24,
+        "question": "What is the purpose of the JOIN clause in SQL Server?",
+        "options": [
+          "To filter records",
+          "To sort records",
+          "To combine rows from two or more tables based on a related column",
+          "To create a new table"
+        ],
+        "answer": "To combine rows from two or more tables based on a related column"
+      },
+      {
+        "id": 25,
+        "question": "What are the different types of JOINs in SQL Server?",
+        "options": [
+          "INNER, OUTER, CROSS, SELF",
+          "LEFT, RIGHT, FULL, INNER",
+          "TOP, BOTTOM, MIDDLE, FULL",
+          "PRIMARY, FOREIGN, UNIQUE, FULL"
+        ],
+        "answer": "LEFT, RIGHT, FULL, INNER"
+      },
+      {
+        "id": 26,
+        "question": "What is the difference between INNER JOIN and OUTER JOIN?",
+        "options": [
+          "INNER JOIN returns all records, OUTER JOIN returns only matching records",
+          "INNER JOIN returns only matching records, OUTER JOIN returns all records and fills with NULLs where there is no match",
+          "There is no difference",
+          "INNER JOIN is faster than OUTER JOIN"
+        ],
+        "answer": "INNER JOIN returns only matching records, OUTER JOIN returns all records and fills with NULLs where there is no match"
+      },
+      {
+        "id": 27,
+        "question": "What is a subquery in SQL Server?",
+        "options": [
+          "A query nested inside another query",
+          "A query that runs on a different database",
+          "A query that only retrieves specific columns",
+          "A query used for data manipulation"
+        ],
+        "answer": "A query nested inside another query"
+      },
+      {
+        "id": 28,
+        "question": "What is the purpose of the DISTINCT keyword in SQL Server?",
+        "options": [
+          "To sort the result set",
+          "To filter records",
+          "To remove duplicate rows from the result set",
+          "To limit the number of rows returned"
+        ],
+        "answer": "To remove duplicate rows from the result set"
+      },
+      {
+        "id": 29,
+        "question": "What is the difference between CHAR and VARCHAR data types?",
+        "options": [
+          "CHAR is fixed-length, VARCHAR is variable-length",
+          "VARCHAR is fixed-length, CHAR is variable-length",
+          "Both are fixed-length",
+          "Both are variable-length"
+        ],
+        "answer": "CHAR is fixed-length, VARCHAR is variable-length"
+      },
+      {
+        "id": 30,
+        "question": "What is the purpose of the TOP clause in SQL Server?",
+        "options": [
+          "To filter records",
+          "To sort records",
+          "To limit the number of rows returned in a result set",
+          "To join tables"
+        ],
+        "answer": "To limit the number of rows returned in a result set"
+      },
+      {
+        "id": 31,
+        "question": "What is the purpose of the COALESCE function in SQL Server?",
+        "options": [
+          "To concatenate strings",
+          "To return the first non-null expression among its arguments",
+          "To calculate the sum of values",
+          "To convert data types"
+        ],
+        "answer": "To return the first non-null expression among its arguments"
+      },
+      {
+        "id": 32,
+        "question": "What is the difference between WHERE and HAVING clauses?",
+        "options": [
+          "WHERE is used with SELECT statements, HAVING is not",
+          "WHERE filters rows before grouping, HAVING filters groups after aggregation",
+          "HAVING filters rows before grouping, WHERE filters groups after aggregation",
+          "There is no difference"
+        ],
+        "answer": "WHERE filters rows before grouping, HAVING filters groups after aggregation"
+      },
+      {
+        "id": 33,
+        "question": "What is a composite key in SQL Server?",
+        "options": [
+          "A key that consists of a single column",
+          "A key that consists of multiple columns",
+          "A key that references another table",
+          "A key that is automatically generated"
+        ],
+        "answer": "A key that consists of multiple columns"
+      },
+      {
+        "id": 34,
+        "question": "What is the purpose of the CASE statement in SQL Server?",
+        "options": [
+          "To create conditional logic within a query",
+          "To handle exceptions",
+          "To join tables",
+          "To sort records"
+        ],
+        "answer": "To create conditional logic within a query"
+      },
+      {
+        "id": 35,
+        "question": "What is the difference between DELETE and DROP commands?",
+        "options": [
+          "DELETE removes rows from a table, DROP removes the entire table",
+          "DROP removes rows from a table, DELETE removes the entire table",
+          "Both are used to remove tables",
+          "Both are used to remove rows"
+        ],
+        "answer": "DELETE removes rows from a table, DROP removes the entire table"
+      },
+      {
+        "id": 36,
+        "question": "What is the purpose of the SQL Server Agent?",
+        "options": [
+          "To manage database backups",
+          "To schedule and automate tasks",
+          "To handle user authentication",
+          "To design database schemas"
+        ],
+        "answer": "To schedule and automate tasks"
+      },
+      {
+        "id": 37,
+        "question": "What is a schema in SQL Server?",
+        "options": [
+          "A visual representation of the database",
+          "A collection of database objects associated with a user",
+          "A backup of the database",
+          "A type of index"
+        ],
+        "answer": "A collection of database objects associated with a user"
+      },
+      {
+        "id": 38,
+        "question": "What is the purpose of the SQL Server Profiler?",
+        "options": [
+          "To design databases",
+          "To monitor and analyze SQL Server events",
+          "To create indexes",
+          "To handle user authentication"
+        ],
+        "answer": "To monitor and analyze SQL Server events"
+      },
+      {
+        "id": 39,
+        "question": "What is the difference between a full backup and a differential backup?",
+        "options": [
+          "A full backup copies all data, while a differential backup copies only data changed since the last full backup",
+          "A differential backup copies all data, while a full backup copies only data changed since the last backup",
+          "There is no difference",
+          "A full backup is faster than a differential backup"
+        ],
+        "answer": "A full backup copies all data, while a differential backup copies only data changed since the last full backup"
+      },
+      {
+        "id": 40,
+        "question": "What is SQL Injection and how can it be prevented?",
+        "options": [
+          "A type of malware attack, prevented by installing antivirus software",
+          "A technique to optimize SQL queries, prevented by indexing",
+          "A security vulnerability that allows attackers to execute malicious SQL statements, prevented by using parameterized queries",
+          "A method of encrypting data, prevented by using strong passwords"
+        ],
+        "answer": "A security vulnerability that allows attackers to execute malicious SQL statements, prevented by using parameterized queries"
+      }
+    ]
+  }
+}

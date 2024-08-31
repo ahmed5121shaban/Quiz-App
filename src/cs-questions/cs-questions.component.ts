@@ -1,29 +1,22 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { QuestionsService } from '../Services/Questions.service';
 
 @Component({
-  selector: 'app-angular-questions',
-  templateUrl: './angular-questions.component.html',
-  styleUrls: ['./angular-questions.component.css']
+  selector: 'app-cs-questions',
+  templateUrl: './cs-questions.component.html',
+  styleUrls: ['./cs-questions.component.css']
 })
-export class AngularQuestionsComponent implements OnInit {
+export class CsQuestionsComponent implements OnInit {
 
   questions!:any[];
   questionsNo=1
   result=0;
   answer!:HTMLInputElement
 
-  //@ViewChild('answerValue') answers!:ElementRef
+  constructor(private server:QuestionsService) { }
 
-  constructor(private server:QuestionsService) {
+  ngOnInit() { this.server.allCsQuestions().subscribe((res:any)=>this.questions=res.quizCSharp.questions);
   }
-
-
-  ngOnInit() {
-    this.server.allAngularQuestions().subscribe((res:any)=>this.questions=res.quizAngular.questions);
-
-  }
-
   nextQ(){
     if (this.questionsNo == (this.questions.length)) {
       return;

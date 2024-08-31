@@ -1,6 +1,7 @@
 {
-  "quiz": {
+  "quizAngular": {
     "title": "Angular Interview Questions",
+    "image":"images/angular-icon-svgrepo-com.svg",
     "questions": [
       {
         "id": 1,

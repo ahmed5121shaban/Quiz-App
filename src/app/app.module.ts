@@ -8,6 +8,8 @@ import { NotFoundComponent } from '../not-found/not-found.component';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AngularQuestionsComponent } from '../angular-questions/angular-questions.component';
+import { CsQuestionsComponent } from '../cs-questions/cs-questions.component';
+import { SqlServerComponent } from '../sql-server/sql-server.component';
 
 
 
@@ -17,7 +19,9 @@ import { AngularQuestionsComponent } from '../angular-questions/angular-question
     ResultsComponent,
     HomeComponent,
     NotFoundComponent,
-    AngularQuestionsComponent
+    AngularQuestionsComponent,
+    CsQuestionsComponent,
+    SqlServerComponent,
    ],
   imports: [
     BrowserModule,

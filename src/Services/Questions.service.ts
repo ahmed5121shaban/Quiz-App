@@ -14,8 +14,14 @@ constructor(private http:HttpClient) {
   this.subject = new BehaviorSubject<number>(0)
 }
 
-allQuestions(){
+allAngularQuestions(){
   return this.http.get("AngularQuestions.json");
+}
+allCsQuestions(){
+  return this.http.get("CsQuestions.json");
+}
+allSQLServerQuestions(){
+  return this.http.get("SqlServer.json");
 }
 
 finallyResult(res:number){
